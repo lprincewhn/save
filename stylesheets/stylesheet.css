@@ -462,7 +462,7 @@ h1.title {
 
 #container {
   border: 1px solid #2a2a2a;
-  background: #ddd url(../images/pattern.png);
+  background: #fff;
   box-shadow: 0 0 5px #b1b1b1;
 }
 
@@ -633,6 +633,19 @@ a.tar span {
   -webkit-transition: opacity ease-in-out 0.3s;  /* Safari <=6.1, Android <= 4.3 */
 }
 
+a.app,
+a.app span {
+  background: transparent url(../images/icon.png) no-repeat 0 0;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  text-indent: -10000px;
+  opacity: 0.8;
+  filter:alpha(opacity=80);  /* IE 5-7 */
+  transition: opacity ease-in-out 0.3s;
+  -webkit-transition: opacity ease-in-out 0.3s;  /* Safari <=6.1, Android <= 4.3 */
+}
+
 a.code {
   background: transparent url(../images/code.png) no-repeat 0 2px;
   width: 30px;
@@ -648,6 +661,7 @@ a.code {
 
 a.zip:hover,
 a.tar:hover,
+a.app:hover,
 a.code:hover {
   opacity: 1;
   filter:alpha(opacity=100);
@@ -661,10 +675,10 @@ a.download-button {
   width: auto;
   float: right;
   background: #999; /* for non-css3 browsers */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#37ADD4', endColorstr='#1B657E'); /* IE <= 9 */
-  background: -webkit-gradient(linear, left top, left bottom, from(#37ADD4), to(#1B657E)); /* ancient webkit browsers */
-  background: -webkit-linear-gradient(top,  #37ADD4,  #1B657E);  /* Safari <=6.1, Android <= 4.3 */
-  background: linear-gradient(to bottom,  #37ADD4,  #1B657E);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#299ED4', endColorstr='#299ED4'); /* IE <= 9 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#299ED4), to(#299ED4)); /* ancient webkit browsers */
+  background: -webkit-linear-gradient(top,  #299ED4,  #299ED4);  /* Safari <=6.1, Android <= 4.3 */
+  background: linear-gradient(to bottom,  #299ED4,  #299ED4);
   height: auto;
   margin-left: 10px;
 }
